@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RollingProgressHUD: UIView {
+open class RollingProgressHUD: UIView {
 
     private var degree: CGFloat = 0.0
     private var capturedView: UIImageView?
@@ -21,7 +21,7 @@ class RollingProgressHUD: UIView {
         super.init(frame: UIScreen.main.bounds)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
