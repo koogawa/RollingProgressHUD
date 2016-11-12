@@ -25,13 +25,17 @@ open class RollingProgressHUD: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    static func show() {
+    // MARK - Public methods
+
+    public static func show() {
         RollingProgressHUD.sharedView.showOverlayView()
     }
 
-    static func dismiss() {
+    public static func dismiss() {
         RollingProgressHUD.sharedView.dismissOverlayView()
     }
+
+    // MARK - Private methods
 
     private func showOverlayView() {
         guard self.overlayView == nil else { return }
