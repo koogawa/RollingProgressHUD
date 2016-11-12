@@ -14,6 +14,26 @@ it, simply add the following line to your Podfile:
 pod "RollingProgressHUD"
 ```
 
+## Usage
+
+Import RollingProgressHUD.
+
+```
+import RollingProgressHUD
+```
+
+### Showing the HUD
+
+```
+RollingProgressHUD.show()
+```
+
+### Dismissing the HUD
+
+```
+RollingProgressHUD.dismiss()
+```
+
 ## Requirements
 
 Swift 3.0 / iOS 8.0+
